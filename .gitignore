@@ -1,0 +1,12 @@
+bin/mysql/data/*
+bin/mysql/logs/*
+src/*
+config/vhosts/*
+data/lib/*
+data/run/*
+data/database_dump/back.dump
+data/database_dump/run
+scripts/postgresql/*.sh
+scripts/apache/*.sh
+.DS_Store
+.idea/*

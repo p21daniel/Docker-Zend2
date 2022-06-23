@@ -1,0 +1,33 @@
+version: '3.9'
+services:
+  apache:
+    build: 
+      context: .
+    container_name: 'apache'
+    restart: 'always'
+    ports:
+      - 80:80
+      - 443:443
+    links:
+      - mysql
+    volumes:
+      - ./src:/var/www/html
+      - ./config/vhosts:/etc/apache2/sites-enabled
+      - ./config/php/php.ini:/usr/local/etc/php/php.ini
+      - ./scripts/apache:/var/scripts
+  mysql:
+    container_name: 'mysql'
+    image: mysql:5.7.36
+    command: --default-authentication-plugin=mysql_native_password
+    restart: 'always'
+    ports:
+      - 3306:3306
+    volumes:
+      - ./bin/mysql/data/mysql:/var/lib/mysql
+      - ./bin/mysql/logs/mysql:/var/log/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: docker
+
+    
+    

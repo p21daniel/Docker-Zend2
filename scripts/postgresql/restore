@@ -1,0 +1,5 @@
+#!/bin/bash
+cd /var
+echo '--------------- Restoring postgresql backup ---------------'
+pg_restore -U user -d database -1 back.dump
+echo '--------------- Finished ---------------'
