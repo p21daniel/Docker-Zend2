@@ -7,7 +7,7 @@
 ---
 
 # Stack Version
-- PHP 7.4.x (easily interchangeable in DockerFile, changing the first line).
+- PHP 5.6.x
 - MySQL 5.7.x
 - Apache
 - Built using Debian 11
