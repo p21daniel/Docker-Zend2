@@ -1,4 +1,5 @@
-logs/*
+logs/nginx/error.log
+logs/nginx/access.log
 data/*
 .DS_Store
 .idea/*
