@@ -1,12 +1,4 @@
-bin/mysql/data/*
-bin/mysql/logs/*
-src/*
-config/vhosts/*
-data/lib/*
-data/run/*
-data/database_dump/back.dump
-data/database_dump/run
-scripts/postgresql/*.sh
-scripts/apache/*.sh
+#logs/*
+data/*
 .DS_Store
 .idea/*

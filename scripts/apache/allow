@@ -1,5 +1,0 @@
-#!/bin/bash
-cd ${FOLDER_PATH}
-echo '--------------- Fix folder permitions ---------------'
-chown -R www-data:www-data ${FOLDER}
-echo '--------------- Finished ---------------'

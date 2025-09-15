@@ -1,13 +1,6 @@
-# Docker Stack (With MySQL)
+# Docker Stack (With MySQL) for Zend2
 
-#### A basic stack (with MySQL) built using Docker Engine.
-
-**Only run `docker-compose up -d` and you're ready to work**
-
----
-
-# Stack Version
+## Stack Version
 - PHP 5.6.x
-- MySQL 5.7.x
-- Apache
-- Built using Debian 11
+- MySQL 8.x
+- Nginx
